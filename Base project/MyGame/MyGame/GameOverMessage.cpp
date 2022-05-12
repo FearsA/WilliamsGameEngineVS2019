@@ -8,7 +8,7 @@ GameOverMessage::GameOverMessage(int score)
 	text_.setCharacterSize(48);
 	text_.setFillColor(sf::Color::Red);
 	std::stringstream stream;
-	stream << "GAME OVER\n\nYOUR SCORE: " << score << "\n\nPRESS ENTER TO CONTINUE";
+	stream << "THE BANK WAS ROBBED!\n\nBAD GUYS CAUGHT: " << score << "\n\nPRESS ENTER TO PLAY AGAIN";
 	text_.setString(stream.str());
 }
 void GameOverMessage::draw()
