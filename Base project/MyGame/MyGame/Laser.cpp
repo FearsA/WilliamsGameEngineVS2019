@@ -8,11 +8,11 @@ sf::FloatRect Laser::getCollisionRect()
 }
 
 
-const float SPEED = 1.2f;
+const float SPEED = 1.7f;
 
 Laser::Laser(sf::Vector2f pos)
 {
-	sprite_.setTexture(GAME.getTexture("Resources/laser.png"));
+	sprite_.setTexture(GAME.getTexture("Resources/SpiderWeb.png"));
 	sprite_.setPosition(pos);
 	assignTag("Laser");
 }

@@ -9,7 +9,7 @@ const float SPEED = 0.25f;
 Meteor::Meteor(sf::Vector2f pos)
 {
 	setCollisionCheckEnabled(true);
-	sprite_.setTexture(GAME.getTexture("Resources/meteor.png"));
+	sprite_.setTexture(GAME.getTexture("Resources/Sandman.png"));
 	sprite_.setPosition(pos);
 	assignTag("meteor");
 }
@@ -23,7 +23,7 @@ void Meteor::update(sf::Time& elapsed) {
 	if (pos.x < sprite_.getGlobalBounds().width * -1)
 	{
 		GameScene& scene = (GameScene&)GAME.getCurrentScene();
-        scene.decreaseLives();
+       scene.decreaseLives();
 
 		makeDead();
 	}
