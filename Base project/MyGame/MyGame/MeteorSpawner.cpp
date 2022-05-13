@@ -1,6 +1,6 @@
 #include "MeteorSpawner.h"
 // The number of milliseconds between meteor spawns.
-const int SPAWN_DELAY = 1000;
+const int SPAWN_DELAY = 700;
 void MeteorSpawner::update(sf::Time& elapsed) {
 	// Determine how much time has passed and adjust our timer.
 	int msElapsed = elapsed.asMilliseconds();
